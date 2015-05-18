@@ -1,0 +1,17 @@
+cat test.csv | cut -d ',' -f2,3,4 > test_clean.csv
+
+tail -n +2 train_clean.csv >train_clean2.csv
+
+
+sed '1 s/$/,0/; 2,$ s/$/,0/' test_clean3.csv > test_clean4.csv
+
+wc -l <file> ---> count number of lines
+
+paste fileA fileB > finalFile ------> Paste column wise...
+
+
+///ADDING HEADER
+
+echo "Header" > newfile
+cat file1 >> newfile
+
